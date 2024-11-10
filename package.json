@@ -2,14 +2,18 @@
   "name": "projeto_carmona",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "bun run --watch src/index.ts",
+    "test": "vitest"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@prisma/client": "5.18.0",
+    "elysia": "latest",
+    "prisma": "^5.18.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "vitest": "^2.1.1"
   },
   "module": "src/index.js"
 }

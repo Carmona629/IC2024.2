@@ -1,0 +1,37 @@
+@baseUrl = http://localhost:3000
+
+### Create ESP
+POST {{baseUrl}}/
+Content-Type: application/json
+
+{
+  "name": "Test-esp",
+  "location": "Test-location"
+}
+
+
+
+### Check if ESP exists
+GET {{baseUrl}}/
+
+
+
+### Create File
+POST {{baseUrl}}/
+Content-Type: application/json
+
+{
+  "name": "Test-file",
+  "url": "http://example.com/log.txt",
+  "esp_id": "1"
+}
+
+
+
+### Get File by ID
+GET {{baseUrl}}/
+
+
+
+### Get File by ESP ID
+GET {{baseUrl}}/
